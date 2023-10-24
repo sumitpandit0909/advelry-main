@@ -1,0 +1,267 @@
+/* play-page */
+.container1{
+    max-width: 1268px;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.play-container{
+    position: relative;
+    min-height: 540px;
+    margin-top: 1rem !important;
+    
+}
+.play-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    border-radius: 14px;
+
+}
+.play-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    
+}
+.tags{
+    color: rgb(228, 159, 30);
+}
+
+.play-btn{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 0.25rem 1.5rem;
+    font-weight: 700;
+    /* display: inline-flex; */
+    position: relative;
+    align-items: center;
+    background-color: #c0392b;
+    width: 40%;
+    transition: 0.8s;
+}
+.play-btn:hover{
+    color: #c0392b;
+    background-color: white;
+    
+}
+/* synopsis section  */
+.play-page-body{
+    width: 90%;
+    
+    margin: auto;
+}
+
+.play-page-title{
+    font-size: 2.5rem;
+    color: rgb(228, 159, 30);
+
+}
+.synopsis p{
+    margin-bottom: 10px;
+}
+.synopsis-text{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+/* cast */
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20%);
+    
+}
+
+.grid-container {
+    margin: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1rem;
+  }
+  .cast-img{
+    height: 100%;
+    width: 100%;
+  }
+  /* screenshots */
+  .screenshots-img{
+    width: 100%;
+  }
+  .screenshot-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50%);
+  }
+  
+  .download-btn{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 0.25rem 1.5rem;
+    font-weight: 700;
+    /* display: inline-flex; */
+    /* position: relative; */
+   
+    background-color: #c0392b;
+    /* width: 40%; */
+    transition: 0.8s;
+}
+.download-btn:hover{
+    color: #c0392b;
+    background-color: white;
+    
+}
+/* .down-btn{
+    align-items: ce;
+} */
+
+/* responsive */
+@media only screen and (max-width: 1270px){
+    .container1{
+        max-width: 1168px;
+    }
+    .synopsis-text{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .container1{
+        max-width: 1000px;
+    }
+    
+    .play-text{
+        width: 60%;
+    }
+    .download-btn{
+        font-size: 3rem;
+    }
+    .synopsis-text{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 912px){
+    .container1{
+        max-width: 850px;
+    }
+    
+    .play-text{
+        width: 60%;
+    }
+    .play-btn{
+        width: 70%;
+        font-size: 2rem;
+    }
+    .tags{
+        font-size: 2rem;    
+    }
+    .synopsis-text{
+        font-size: 2rem;
+    }
+    .download-btn{
+        font-size: 3rem;
+    }
+
+}
+@media only screen and (max-width: 820px){
+    .container1{
+        max-width: 700px;
+    }
+    
+    .play-text{
+        width: 60%;
+    }
+    .play-btn{
+        width: 70%;
+        font-size: 2rem;
+    }
+    .tags{
+        font-size: 2rem;    
+    }
+    .synopsis-text{
+        font-size: 1.5rem;
+    }
+    .download-btn{
+        font-size: 3rem;
+    }
+
+}
+@media only screen and (max-width: 545px){
+    .container1{
+        max-width: 500px;
+    }
+    
+    .play-text{
+        width: 60%;
+    }
+    .play-btn{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .tags{
+        font-size: 1.5rem;    
+    }
+    .synopsis-text{
+        font-size: 1.2rem;
+    }
+    .download-btn{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 420px){
+    .container1{
+        max-width: 350px;
+    }
+    .play-container{
+        min-height: 400px;
+    }
+    .play-text{
+        width: 100%;
+        padding: 20px;
+    }
+    .play-btn{
+        width: 60%;
+        font-size: 18px;
+    }
+    .tags{
+        font-size: 1.8rem;    
+    }
+    .synopsis-text{
+        font-size: 1.2rem;
+    }
+    .download-btn{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 282px){
+    .container1{
+        max-width: 250px;
+    }
+    .play-container{
+        min-height: 350px;
+    }
+    .item-content-title{
+        font-size: 2rem;
+    }
+    .play-text{
+        width: 100%;
+        padding: 20px;
+    }
+    .play-btn{
+        width: 70%;
+        font-size: 12px;
+    }
+    .tags{
+        font-size: 1.2rem;    
+    }
+    .synopsis-text{
+        font-size: 1.1rem;
+    }
+    .download-btn{
+        font-size: 1.8rem;
+    }
+}
